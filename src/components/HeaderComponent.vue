@@ -67,11 +67,13 @@
 </script>
 
 <style lang="scss" scoped>
+.container img{
+    padding: 10px 0;
+}
 ul{
     list-style: none;
     display: flex;
     height: 100%;
-    margin-bottom: 5px;
     li{
         padding: 0px 5px,
         
@@ -84,6 +86,9 @@ ul{
     }
     li:hover{
         border-bottom: 5px solid blue;
+    }
+    a:hover{
+        color: blue;
     }
 }
 </style>
