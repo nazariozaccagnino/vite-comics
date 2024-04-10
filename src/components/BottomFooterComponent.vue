@@ -1,6 +1,8 @@
 <template>
-    <div>
-        bottomfooter
+    <div id="bottomfooter">
+        <div class="container">
+            bottomfooter
+        </div>
     </div>
 </template>
 
@@ -13,7 +15,7 @@
 <style lang="scss" scoped>
 @use '../assets/styles/partials/variables' as *;
 
-div{
+#bottomfooter{
     background-color: $bottomfooterbackground;
     color: white;
 }

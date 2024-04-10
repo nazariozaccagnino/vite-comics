@@ -1,6 +1,8 @@
 <template>
-    <div>
-        topfooter
+    <div id="topfooter">
+        <div class="container">
+            topfooter
+        </div>
     </div>
 </template>
 
@@ -13,7 +15,7 @@
 <style lang="scss" scoped>
 @use '../assets/styles/partials/variables' as *;
 
-div{
+#topfooter{
     background-color: $topfooterbackground;
 }
 </style>

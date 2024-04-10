@@ -1,6 +1,8 @@
 <template>
-    <div>
-        middlefooter
+    <div id="middlefooter">
+        <div class="container">
+            middlefooter
+        </div>
     </div>
 </template>
 
@@ -11,7 +13,7 @@
 </script>
 
 <style lang="scss" scoped>
-div{
+#middlefooter{
     background-image: url(/public/img/footer-bg.jpg);
     color: white;
     height: 500px;
