@@ -1,7 +1,7 @@
 <template>
     <div id="middlefooter">
         <div class="container">
-            middlefooter
+            <img src="/img/dc-logo-bg.png" alt="">
         </div>
     </div>
 </template>
@@ -14,8 +14,14 @@
 
 <style lang="scss" scoped>
 #middlefooter{
-    background-image: url(/public/img/footer-bg.jpg);
+    background-image: url(/img/footer-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
     color: white;
     height: 500px;
+    img{
+        object-fit: contain;
+
+    }
 }
 </style>
