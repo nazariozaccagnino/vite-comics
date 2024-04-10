@@ -1,12 +1,12 @@
 <template>
     <div>
-        footer
+        middlefooter
     </div>
 </template>
 
 <script>
     export default {
-        name: 'FooterComponent'
+        name: 'MiddleFooterComponent'
     }
 </script>
 
