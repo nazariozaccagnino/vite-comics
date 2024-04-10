@@ -1,7 +1,7 @@
 <template>
-    <div>
-        header
-    </div>
+   <div class="container">
+    <img src="/img/dc-logo.png" alt="logo">
+   </div>
 </template>
 
 <script>

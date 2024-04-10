@@ -1,7 +1,9 @@
 <template>
-    <div>
-        main
-    </div>
+    <main>
+        <div class="container">
+            >>>Content goes here<<<
+        </div>
+    </main>
 </template>
 
 <script>
@@ -11,5 +13,12 @@
 </script>
 
 <style lang="scss" scoped>
+@use '../assets/styles/partials/variables' as *;
 
+main{
+    background-color: $mainbackground;
+     div{
+        color: white;
+     }
+}
 </style>
