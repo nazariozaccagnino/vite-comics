@@ -11,5 +11,9 @@
 </script>
 
 <style lang="scss" scoped>
+@use '../assets/styles/partials/variables' as *;
 
+div{
+    background-color: $topfooterbackground;
+}
 </style>
