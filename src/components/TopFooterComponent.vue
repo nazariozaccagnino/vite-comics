@@ -2,9 +2,11 @@
     <div id="topfooter">
         <div class="container">
             <ul>
-                <li v-for="(item, index) in buylist" class="d-flex">
-                    <img :src="'/public/img/'+item.img" alt="">
-                    <div class="description">{{ item.name }}</div>
+                <li v-for="(item, index) in buylist">
+                    <div class="d-flex">
+                        <img :src="'/img/'+item.img" alt="">
+                        <div class="description">{{ item.name }}</div>
+                    </div>                    
                 </li>
             </ul>
         </div>
@@ -56,6 +58,11 @@
         justify-content: center;
         li{
             padding: 10px;
+        }
+        li img{
+            width: 50px;
+            height: 50px;
+            object-fit: contain;
         }
         .description{
             align-self: center;
