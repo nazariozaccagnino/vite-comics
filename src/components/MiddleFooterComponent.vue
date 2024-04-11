@@ -2,12 +2,12 @@
     <div id="middlefooter">
         <div class="container">
             <div class="d-flex justify-content-between">
-                <div>
+                <div class="my-4">
                     <div class="row">
                         <div class="col" v-for="(item, index) in actions" :key="index">
                             <h5>{{ item.title }}</h5>
                             <ul>
-                                <li v-for="(link, index) in item.links" :key="index"><a href="#">{{ link }}</a></li>
+                                <li v-for="(link, index) in item.links" :key="index"><a href="#">{{ link}}</a></li>
                             </ul>
                         </div>
                     </div>
@@ -96,7 +96,6 @@ export default {
     #bigdclogo img {
         width: 70%;
         transform: scale(1.3) translate(50px,0px);
-        object-fit: cover;
     }
 
 }
