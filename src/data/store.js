@@ -72,5 +72,5 @@ const comics= [
         "type": "graphic novel",
     },
   ];
-  
-  export {comics};
+ 
+export {comics};
