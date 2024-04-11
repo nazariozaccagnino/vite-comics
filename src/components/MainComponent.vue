@@ -7,15 +7,9 @@
             current series
         </div>
         <div class="container">
-            <div class="row">
+            <div class="row p-4">
                 <div class="col-2 d-flex align-items-stretch p-2" v-for="(item, index) in comics">
-                    <div class="card">
-                        <img :src="item.thumb" class="card-img-top thumb" :alt="item.series">
-                        <div class="card-body">
-                            <p class="card-text">{{ item.series }}</p>
-                            <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
-                        </div>
-                    </div>
+                    <CardComponent :image="item.thumb" :descr="item.series" />
                 </div>
             </div>
         </div>
@@ -24,8 +18,12 @@
 
 <script>
 import { comics } from '../data/store.js'
+import CardComponent from './CardComponent.vue'
 export default {
     name: 'MainComponent',
+    components:{
+        CardComponent
+    },
     data() {
         return {
             comics: comics,
@@ -60,7 +58,5 @@ main {
     font-weight: 700;
     color: white;
 }
-.thumb{
-    aspect-ratio: 1 / 1;
-}
+
 </style>
